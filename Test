@@ -1,1 +1,649 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  
+  
+  
+
+  <title>CodePen - Spinkit: Petal Spinner with Progress Bar</title>
+
+    <link rel="canonical" href="https://codepen.io/Alysson89001/pen/rNbGbNX">
+  
+  
+  
+  
+<style>
+/* Written by tommyho510@gmail.com           */
+/* Version 160909                            */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat); 
+
+#loading {
+  background-color: #000000;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  margin-top: 0px;
+  top: 0px;
+  /* opacity: 0.9; */
+}
+
+#loading-text {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  padding: 15px;
+  transform: translate(-50%, -50%);
+  color: #ae17fb;
+  display: inline-block;
+  margin-left: 12px;
+  font-family: Montserrat;
+}
+
+body {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 40vw;
+  height: 40vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.common {
+  height: 5vw;
+  max-height: 100%;
+  overflow: auto;
+  width: 2vw;
+  margin: auto;
+  max-width: 100%;
+  position: absolute;
+  background-color: ;
+  border-radius: 0vw 10vw 0vw 10vw;
+  box-shadow: inset 0vw 0vw 0vw .1vw #E645D0, 0vw 0vw 1.5vw 0vw #E645D0;
+}
+
+.one {
+  transform: rotate(45deg);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 7.5vw;
+}
+
+.two {
+  transform: rotate(90deg);
+  left: 5.5vw;
+  right: 0;
+  top: 0;
+  bottom: 5.5vw;
+}
+
+.three {
+  transform: rotate(135deg);
+  left: 7.5vw;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.four {
+  transform: rotate(180deg);
+  left: 5.5vw;
+  right: 0;
+  top: 5.5vw;
+  bottom: 0;
+}
+
+.five {
+  transform: rotate(225deg);
+  left: 0;
+  right: 0;
+  top: 7.5vw;
+  bottom: 0;
+}
+
+.six {
+  transform: rotate(270deg);
+  left: 0;
+  right: 5.5vw;
+  top: 5.5vw;
+  bottom: 0;
+}
+
+.seven {
+  transform: rotate(315deg);
+  left: 0;
+  right: 7.5vw;
+  top: 0;
+  bottom: 0;
+}
+
+.eight {
+  transform: rotate(360deg);
+  left: 0;
+  right: 5.5vw;
+  top: 0;
+  bottom: 5.5vw;
+}
+
+.bar {
+  width: 12vw;
+  height: .25vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 16vw;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+  background: #E645D0;
+}
+
+.progress {
+  width: 12vw;
+  height: .5vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+  background: #17E1E6;
+}
+
+.one {
+  animation: one 1s ease infinite;
+  -moz-animation: one 1s ease infinite;
+  /* Firefox */
+  -webkit-animation: one 1s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: one 1s ease infinite;
+  /* Opera */
+}
+
+@keyframes one {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.two {
+  animation: two 1s .125s ease infinite;
+  -moz-animation: two 1s .125s ease infinite;
+  /* Firefox */
+  -webkit-animation: two 1s .125s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: two 1s .125s ease infinite;
+  /* Opera */
+}
+
+@keyframes two {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.three {
+  animation: three 1s .25s ease infinite;
+  -moz-animation: three 1s .25s ease infinite;
+  /* Firefox */
+  -webkit-animation: three 1s .25s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: three 1s .25s ease infinite;
+  /* Opera */
+}
+
+@keyframes three {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.four {
+  animation: four 1s .375s ease infinite;
+  -moz-animation: four 1s .375s ease infinite;
+  /* Firefox */
+  -webkit-animation: four 1s .375s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: four 1s .375s ease infinite;
+  /* Opera */
+}
+
+@keyframes four {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.five {
+  animation: five 1s .5s ease infinite;
+  -moz-animation: five 1s .5s ease infinite;
+  /* Firefox */
+  -webkit-animation: five 1s .5s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: five 1s .5s ease infinite;
+  /* Opera */
+}
+
+@keyframes five {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.six {
+  animation: six 1s .625s ease infinite;
+  -moz-animation: six 1s .625s ease infinite;
+  /* Firefox */
+  -webkit-animation: six 1s .625s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: six 1s .625s ease infinite;
+  /* Opera */
+}
+
+@keyframes six {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.seven {
+  animation: seven 1s .750s ease infinite;
+  -moz-animation: seven 1s .750s ease infinite;
+  /* Firefox */
+  -webkit-animation: seven 1s .750s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: seven 1s .750s ease infinite;
+  /* Opera */
+}
+
+@keyframes seven {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.eight {
+  animation: eight 1s .875s ease infinite;
+  -moz-animation: eight 1s .875s ease infinite;
+  /* Firefox */
+  -webkit-animation: eight 1s .875s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: eight 1s .875s ease infinite;
+  /* Opera */
+}
+
+@keyframes eight {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.container {
+  animation: container 5s linear infinite;
+  -moz-animation: container 5s linear infinite;
+  /* Firefox */
+  -webkit-animation: container 5s linear infinite;
+  /* Safari and Chrome */
+  -o-animation: container 5s linear infinite;
+  /* Opera */
+}
+
+@keyframes container {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.progress {
+  animation: progress 6s ease;
+  -moz-animation: progress 6s ease;
+  /* Firefox */
+  -webkit-animation: progress 6s ease;
+  /* Safari and Chrome */
+  -o-animation: progress 6s ease;
+  /* Opera */
+}
+
+@keyframes progress {
+  0% {
+    left: -24vw;
+  }
+  10% {
+    left: -20vw;
+  }
+  30% {
+    left: -16vw;
+  }
+  50% {
+    left: -12vw;
+  }
+  65% {
+    left: -10vw;
+  }
+  80% {
+    left: -4vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.fade-in {
+  animation: fade-in 2s ease;
+  -moz-animation: fade-in 2s ease;
+  /* Firefox */
+  -webkit-animation: fade-in 2s ease;
+  /* Safari and Chrome */
+  -o-animation: fade-in 2s ease;
+  /* Opera */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.out {
+  animation: out 2s 15s ease;
+  -moz-animation: out 2s 15s ease;
+  /* Firefox */
+  -webkit-animation: out 2s 15s ease;
+  /* Safari and Chrome */
+  -o-animation: out 2s 15s ease;
+  /* Opera */
+}
+
+@keyframes out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+</style>
+
+  
+  
+  
+</head>
+
+<body>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Preloader</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/css/bootstrap2/bootstrap-switch.min.css" integrity="sha512-lANJTDwF23Xos7T5Q7SNbZ7dFxLG8YSQJ2qCGrav0Fhe5vns60+tUECZv+9udXdKiX3/YTWt++tEKyEcuZv4dQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/js/bootstrap-switch.min.js" integrity="sha512-J+763o/bd3r9iW+gFEqTaeyi+uAphmzkE/zU8FxY6iAvD3nQKXa+ZAWkBI9QS9QkYEKddQoiy0I5GDxKf/ORBA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="preload.js"></script>
+  <link href="preload.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+</head>
+
+<body onload="splash(5000)">
+  <div id="loading">
+  <div class="out">
+  <div class="fade-in">
+    <div class="container">
+      <div class="one common"></div>
+      <div class="two common"></div>
+      <div class="three common"></div>
+      <div class="four common"></div>
+      <div class="five common"></div>
+      <div class="six common"></div>
+      <div class="seven common"></div>
+      <div class="eight common"></div>
+    </div>
+    <div id="loading-text">Now Loading ... お待ちください ...</div>
+    <div class="bar">
+      <div class="progress"></div>
+    </div>
+  </div>
+  </div>
+  </div>
+  ...
+  
+  ... <!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  
+  
+  
+
+  <title>CodePen - Adjustable Text Emphasis with CSS lh unit </title>
+
+    <link rel="canonical" href="https://codepen.io/Alysson89001/pen/LYvzBRw">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+  
+<style>
+@font-face {
+  font-family: "Geist Sans";
+  src: url("https://assets.codepen.io/605876/GeistVF.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: hsl(0 0% 2%)
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: "Geist Sans", sans-serif;
+  font-weight: 80;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+body::before {
+  --size: 120px;
+  --line: hsl(0 0% 100% / 0.13);
+  --thickness: 2px;
+  --offset: 60px;
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(transparent 0 calc(var(--size) - var(--thickness)), var(--line) calc(var(--size) - var(--thickness)) var(--size)) var(--offset) var(--offset) / var(--size) var(--size),
+    linear-gradient(90deg, transparent 0 calc(var(--size) - var(--thickness)), var(--line) calc(var(--size) - var(--thickness)) var(--size)) var(--offset) var(--offset) / var(--size) var(--size);
+}
+
+:root {
+  --primary-bg: linear-gradient(var(--primary), var(--primary));
+}
+
+[data-gradient=true] {
+  --primary-bg: conic-gradient(from var(--angle, 180deg) at 50% 70%,hsla(0,0%,98%,1) 0deg,#eec32d 72.0000010728836deg,#ec4b4b 144.0000021457672deg,#709ab9 216.00000858306885deg,#4dffbf 288.0000042915344deg,hsla(0,0%,98%,1) 1turn);
+}
+
+h2 {
+  font-weight: 120;
+  line-height: 1.07;
+  resize: both;
+  overflow: hidden;
+  width: 10ch;
+  background:
+    var(--primary-bg),
+    linear-gradient(var(--secondary), var(--secondary)),
+    linear-gradient(var(--secondary) 0 calc((var(--highlight) + var(--spread)) * 1lh), transparent);
+  background-repeat: no-repeat;
+  background-size: 
+    100% calc(var(--highlight) * 1lh),
+    100% calc((var(--highlight) + var(--spread)) * 1lh),
+    100% 100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  text-wrap: balance;
+  font-size: clamp(2rem, 1rem + 4vw, 12rem);
+  display: inline-block;
+  margin: 0;
+}
+
+.wrapper {
+  padding: 2rem;
+  background: var(--bg);
+  position: relative;
+}
+
+@media(prefers-reduced-motion: no-preference) {
+  @property --angle {
+    inherits: true;
+    initial-value: 180deg;
+    syntax: '<angle>';
+  }
+  @-webkit-keyframes rotate {
+    to { --angle: 540deg; }
+  }
+  @keyframes rotate {
+    to { --angle: 540deg; }
+  }
+  [data-gradient=true][data-animate=true] {
+    -webkit-animation: rotate 6s infinite linear;
+            animation: rotate 6s infinite linear;
+  }
+}
+</style>
+
+  
+  
+  
+</head>
+
+<body>
+  <div class="wrapper">
+  <h2>Making the web more exciting one pixel at a time.</h2>
+</div>
+  
+      <script id="rendered-js" type="module">
+import { GUI } from 'https://cdn.skypack.dev/dat.gui';
+
+const CONFIG = {
+  gradient: true,
+  animated: true,
+  highlight: 2,
+  spread: 1,
+  primary: '#ffffff',
+  secondary: '#606060' };
+
+
+const CTRL = new GUI();
+
+const UPDATE = () => {
+  for (const key of Object.keys(CONFIG)) {
+    document.documentElement.style.setProperty(`--${key}`, CONFIG[key]);
+  }
+  document.documentElement.setAttribute('data-gradient', CONFIG.gradient);
+  document.documentElement.setAttribute('data-animate', CONFIG.animated);
+};
+
+const HIGHLIGHT_ONE = CTRL.addFolder('Highlight One');
+HIGHLIGHT_ONE.add(CONFIG, 'highlight', 0, 5, 1).name('Spread').onChange(UPDATE);
+HIGHLIGHT_ONE.addColor(CONFIG, 'primary').name('Color').onChange(UPDATE);
+HIGHLIGHT_ONE.add(CONFIG, 'gradient').name('Use gradient?').onChange(UPDATE);
+HIGHLIGHT_ONE.add(CONFIG, 'animated').name('Animate gradient?').onChange(UPDATE);
+
+const HIGHLIGHT_TWO = CTRL.addFolder('Highlight Two');
+HIGHLIGHT_TWO.add(CONFIG, 'spread', 0, 5, 1).name('Spread').onChange(UPDATE);
+HIGHLIGHT_TWO.addColor(CONFIG, 'secondary').name('Color').onChange(UPDATE);
+
+UPDATE();
+    </script>
+
+  
+</body>
+
+</html>
+
+</body>
+  
+      <script id="rendered-js" >
+/* Custom Spinkit js: require jQuery.min.js  */
+/* Written by tommyho510@gmail.com           */
+/* Version 160909                            */
+
+$(document).ready(function(){
+  $("#loading-center").click(function(){
+    $("#loading").fadeOut(1000, function(){
+      //alert("fadeOut() method is finished!");
+      return false;
+    });
+  });
+}); 
+
+function splash(param) {
+  var time = param;
+  setTimeout(function() {
+    $('#loading').fadeOut(1000, function(){
+      return false;
+    });
+  }, time);
+}
+    </script>
+
+  
+</body>
+
+</html>
 
