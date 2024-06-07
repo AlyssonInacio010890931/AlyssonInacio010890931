@@ -319,4 +319,543 @@ a .icon-rotate-90:before,a .icon-rotate-180:before,a .icon-rotate-270:before,a .
 .icon-superscript:before{content:"\f12b";}
 .icon-subscript:before{content:"\f12c";}
 .icon-eraser:before{content:"\f12d";}
-.icon-puzz
+.icon-puzzle-piece:before{content:"\f12e";}
+.icon-microphone:before{content:"\f130";}
+.icon-microphone-off:before{content:"\f131";}
+.icon-shield:before{content:"\f132";}
+.icon-calendar-empty:before{content:"\f133";}
+.icon-fire-extinguisher:before{content:"\f134";}
+.icon-rocket:before{content:"\f135";}
+.icon-maxcdn:before{content:"\f136";}
+.icon-chevron-sign-left:before{content:"\f137";}
+.icon-chevron-sign-right:before{content:"\f138";}
+.icon-chevron-sign-up:before{content:"\f139";}
+.icon-chevron-sign-down:before{content:"\f13a";}
+.icon-html5:before{content:"\f13b";}
+.icon-css3:before{content:"\f13c";}
+.icon-anchor:before{content:"\f13d";}
+.icon-unlock-alt:before{content:"\f13e";}
+.icon-bullseye:before{content:"\f140";}
+.icon-ellipsis-horizontal:before{content:"\f141";}
+.icon-ellipsis-vertical:before{content:"\f142";}
+.icon-rss-sign:before{content:"\f143";}
+.icon-play-sign:before{content:"\f144";}
+.icon-ticket:before{content:"\f145";}
+.icon-minus-sign-alt:before{content:"\f146";}
+.icon-check-minus:before{content:"\f147";}
+.icon-level-up:before{content:"\f148";}
+.icon-level-down:before{content:"\f149";}
+.icon-check-sign:before{content:"\f14a";}
+.icon-edit-sign:before{content:"\f14b";}
+.icon-external-link-sign:before{content:"\f14c";}
+.icon-share-sign:before{content:"\f14d";}
+.icon-compass:before{content:"\f14e";}
+.icon-collapse:before{content:"\f150";}
+.icon-collapse-top:before{content:"\f151";}
+.icon-expand:before{content:"\f152";}
+.icon-euro:before,.icon-eur:before{content:"\f153";}
+.icon-gbp:before{content:"\f154";}
+.icon-dollar:before,.icon-usd:before{content:"\f155";}
+.icon-rupee:before,.icon-inr:before{content:"\f156";}
+.icon-yen:before,.icon-jpy:before{content:"\f157";}
+.icon-renminbi:before,.icon-cny:before{content:"\f158";}
+.icon-won:before,.icon-krw:before{content:"\f159";}
+.icon-bitcoin:before,.icon-btc:before{content:"\f15a";}
+.icon-file:before{content:"\f15b";}
+.icon-file-text:before{content:"\f15c";}
+.icon-sort-by-alphabet:before{content:"\f15d";}
+.icon-sort-by-alphabet-alt:before{content:"\f15e";}
+.icon-sort-by-attributes:before{content:"\f160";}
+.icon-sort-by-attributes-alt:before{content:"\f161";}
+.icon-sort-by-order:before{content:"\f162";}
+.icon-sort-by-order-alt:before{content:"\f163";}
+.icon-thumbs-up:before{content:"\f164";}
+.icon-thumbs-down:before{content:"\f165";}
+.icon-youtube-sign:before{content:"\f166";}
+.icon-youtube:before{content:"\f167";}
+.icon-xing:before{content:"\f168";}
+.icon-xing-sign:before{content:"\f169";}
+.icon-youtube-play:before{content:"\f16a";}
+.icon-dropbox:before{content:"\f16b";}
+.icon-stackexchange:before{content:"\f16c";}
+.icon-instagram:before{content:"\f16d";}
+.icon-flickr:before{content:"\f16e";}
+.icon-adn:before{content:"\f170";}
+.icon-bitbucket:before{content:"\f171";}
+.icon-bitbucket-sign:before{content:"\f172";}
+.icon-tumblr:before{content:"\f173";}
+.icon-tumblr-sign:before{content:"\f174";}
+.icon-long-arrow-down:before{content:"\f175";}
+.icon-long-arrow-up:before{content:"\f176";}
+.icon-long-arrow-left:before{content:"\f177";}
+.icon-long-arrow-right:before{content:"\f178";}
+.icon-apple:before{content:"\f179";}
+.icon-windows:before{content:"\f17a";}
+.icon-android:before{content:"\f17b";}
+.icon-linux:before{content:"\f17c";}
+.icon-dribbble:before{content:"\f17d";}
+.icon-skype:before{content:"\f17e";}
+.icon-foursquare:before{content:"\f180";}
+.icon-trello:before{content:"\f181";}
+.icon-female:before{content:"\f182";}
+.icon-male:before{content:"\f183";}
+.icon-gittip:before{content:"\f184";}
+.icon-sun:before{content:"\f185";}
+.icon-moon:before{content:"\f186";}
+.icon-archive:before{content:"\f187";}
+.icon-bug:before{content:"\f188";}
+.icon-vk:before{content:"\f189";}
+.icon-weibo:before{content:"\f18a";}
+.icon-renren:before{content:"\f18b";}
+</style> 
+  <style>
+@import url(https://fonts.googleapis.com/css?family=Gudea);
+
+body{
+	font-family: Gudea;
+	background : url('http://i.cubeupload.com/UWyvD2.jpg')
+  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+label i[class^='icon-'] , label i[class*='icon-']{
+	display: block;
+	padding: 14px 0;
+}
+
+a:hover i[class^='icon-'] , a:hover i[class*='icon-']{
+	color : #837D7D;
+}
+
+.container{
+	width: 402px;
+	margin: 40px auto;
+	position: relative;
+	border: 1px solid #CFCFCF;
+	overflow: hidden;
+	background-color: #fff;
+	border-radius: 7px;
+}
+
+.badboy{
+	width: 0;
+	height: 0;
+	clear: both;
+}
+
+.bg-image{
+	width: 402px;
+	height: 157px;
+	background-image: url('http://i.cubeupload.com/ksxXPp.png');
+	position: relative;
+	border-bottom: 1px solid #38393A;
+}
+
+.bg-image:before{
+	content: '';
+	position: absolute;
+	width: 150px;
+	height: 213px;
+	background: -webkit-linear-gradient(rgba(240, 240, 240, 0.31) 22%, rgba(240, 237, 240, 0.22) 51%, rgba(214, 214, 214, 0.28) 80%);
+	background: -moz-linear-gradient(rgba(240, 240, 240, 0.31) 22%, rgba(240, 237, 240, 0.22) 51%, rgba(214, 214, 214, 0.28) 80%);
+	right: -56px;
+	-webkit-transform: rotate(-43deg);
+	-moz-transform: rotate(-48deg);
+	top: -79px;
+	
+}
+
+h3 {
+	display: block;
+	position: absolute;
+	text-shadow : 0 -1px 2px #000;
+	left: 10px;
+	top: 14px;
+	font-size : 16px;
+	color : #F9F7F6;
+	font-weight: normal;
+}
+
+.followe{
+	background : -webkit-linear-gradient(rgb(112, 114, 119) 14%, rgb(101, 98, 98) 37%, rgb(80, 80, 81) 62%, rgb(65, 68, 67) 83%);
+	background : -moz-linear-gradient(rgb(112, 114, 119) 14%, rgb(101, 98, 98) 37%, rgb(80, 80, 81) 62%, rgb(65, 68, 67) 83%);
+	border-bottom: 1px solid #18191A;
+}
+
+.followe li{
+	float: left;
+  width: 201px;
+	box-sizing : border-box;
+	-moz-box-sizing : border-box;
+}
+
+.followe li:nth-child(1){
+	border-right: 1px solid #2D3234;
+}
+
+.followe a{
+	display: block;
+	padding : 10px 0;
+	text-decoration: none;
+	color: #F5F5F5;
+}
+
+.followe span{
+	display: block;
+	text-align: center;
+}
+
+span#number{
+	font-size: 20px;
+	text-shadow: 0 -1px 2px #000;
+}
+
+span#followe{
+	text-shadow: 0 -1px 2px #000;
+	font-size: 15px;
+}
+
+.image{
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	background: #F7F9F9;
+	border: 1px solid #211410;
+	top: 89px;
+	left: 140px;
+	border-radius: 50%;
+}
+
+.image:before{
+	content: '';
+	position: absolute;
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	top: 5px;
+	left: 5px;
+	background-image: url('http://i.cubeupload.com/Cocek1.png');
+}
+
+.image:after{
+	content: '';
+	position: absolute;
+	width: 110px;
+	height: 65px;
+	border-radius: 90px 90px 0 0;
+	background: rgba(255, 255, 255, 0.22);
+	left: 29px;
+	-webkit-transform: rotate(42deg);
+	-moz-transform: rotate(42deg);
+}
+
+label{
+	display: inline-block;
+	width: 134px;
+	height: 52px;
+	text-align: center;
+	margin: 0 -2px;
+	text-decoration: none;
+	color : #9B9E8D;
+	font-size: 22px;
+	box-shadow: 0 2px 3px 0px #D8D7D7;
+	position: relative;
+	background: #fff;
+	z-index: 1;
+	-webkit-transition : all .25s ease;
+	-moz-transition : all .25s ease;
+}
+
+label:hover{
+	color: #767968;
+}
+
+.all:before{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 9px 15px 0px 15px;
+	border-color: rgb(255, 255, 255) rgba(255, 0, 0, 0) rgb(27, 169, 236) rgba(0, 0, 255, 0);
+	left: 52px;
+	z-index: 1;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+}
+
+.all{
+	width: 1208px;
+}
+
+.chat{
+	float: left;
+	position: relative;
+	width: 403px;
+}
+
+.chat .show-message{
+	background : -webkit-linear-gradient(rgb(242, 242, 243) 15%, rgb(240, 243, 241) 36%, rgb(241, 240, 241) 58%, rgb(236, 236, 236) 81%);
+	background : -moz-linear-gradient(rgb(242, 242, 243) 15%, rgb(240, 243, 241) 36%, rgb(241, 240, 241) 58%, rgb(236, 236, 236) 81%);
+	border-bottom: 1px solid #D3D3D3;
+	padding-bottom: 30px;
+}
+
+.chat .type-text{
+	background : -webkit-linear-gradient(rgb(251, 251, 254) 18%, rgb(250, 251, 253) 51%, rgb(251, 251, 252) 78%);
+	background : -moz-linear-gradient(rgb(251, 251, 254) 18%, rgb(250, 251, 253) 51%, rgb(251, 251, 252) 78%);
+	padding-bottom: 13px;
+}
+
+input[type='text']{
+	border: 1px solid #CED3D9;
+	margin: 13px 0 0 28px;
+	padding: 10px;
+	outline: 0;
+	border-radius: 5px;
+	width: 235px;
+	color : #A0A0A0;
+}
+
+button[type='submit']{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: -webkit-linear-gradient(rgb(32, 199, 127) 21%, rgb(30, 180, 115) 52%, rgb(28, 160, 101) 79%);
+	background: -moz-linear-gradient(rgb(32, 199, 127) 21%, rgb(30, 180, 115) 52%, rgb(28, 160, 101) 79%);
+	background: -ms-linear-gradient(rgb(32, 199, 127) 21%, rgb(30, 180, 115) 52%, rgb(28, 160, 101) 79%);
+	box-shadow: inset 0 0 2px 1px #DDD7D7;
+	border: 1px solid #A0A0A0;
+	padding: 2px 22px 10px 20px;
+	margin: 0px 0 0 25px;
+	border-radius: 4px;
+}
+
+button[type='submit']:hover{
+	cursor: pointer;
+}
+
+button[type='submit']:hover #i{
+	color : #fff;
+}
+
+.friend{	
+	float: left;
+	margin: 30px 0 0 15px;
+}
+
+.me{
+	float: right;
+	margin : 20px 15px 0 0;
+}
+
+.friend img , .me img{
+	border-radius: 2px;
+} 
+
+.friend img{
+	float: left;
+	margin: 10px 0 0 7px;
+}
+
+.me img{
+	float: right;
+	margin: 10px 7px 0 ;
+}
+
+.friend .message{
+	border : 1px solid #E2E2E2;
+	margin: 2px 0 0 55px;
+	padding: 10px;
+	background: #FDFCF5;
+	border-radius: 6px;
+	width: 180px;
+	position: relative;
+}
+
+.me .message{
+	border: 1px solid #BFE3EE;
+	margin: 2px 51px 0 0;
+	padding: 10px;
+	background: #DCEAF7;
+	border-radius: 6px;
+	position: relative;
+	width: 160px;
+}
+
+.friend p , .me p{
+	font-size: 14px;
+}
+
+.me p{
+	color : #6AA0F0;
+}
+
+.friend p{
+	color : #AEB0A4;
+}
+
+#i{
+	font-size: 25px;
+	color: #E8E8E8;
+	display: block;
+	margin-top: 4px;
+	-webkit-transition : all .25s ease;
+	-moz-transition : all .25s ease;
+}
+
+label:hover{
+	cursor: pointer;
+}
+
+input[type='radio']{
+	display: none;
+}
+
+input[type='radio']:checked + label{
+	color: #767968;
+}
+
+input[type='radio']#one:checked ~ .all{
+	margin-left: 0px;
+	-webkit-transition : all .5s ease-in-out;
+	-moz-transition : all .5s ease-in-out;
+}
+
+.Description , .Link{
+	width:402px;
+	height:282px;
+	float:left;
+	padding: 10px 0;
+	background : -webkit-linear-gradient(rgb(242, 242, 243) 15%, rgb(240, 243, 241) 36%, rgb(241, 240, 241) 58%, rgb(236, 236, 236) 81%);
+	background : -moz-linear-gradient(rgb(242, 242, 243) 15%, rgb(240, 243, 241) 36%, rgb(241, 240, 241) 58%, rgb(236, 236, 236) 81%);
+}
+
+.Description  p {
+	margin : 60px 0;
+	text-align: center;
+	line-height: 30px;
+	color: #535252;
+	font-size: 18px;
+}
+
+input[type='radio']#two:checked  ~  .all{
+	margin-left: -403px;
+	-webkit-transition : all .5s ease-in-out;
+	-moz-transition : all .5s ease-in-out;
+}
+
+input[type='radio']#two:checked ~  .all:before{
+	left: 183px;
+}
+
+input[type='radio']#three:checked  ~  .all{
+	margin-left: -805px;
+	-webkit-transition : all .5s ease-in-out;
+	-moz-transition : all .5s ease-in-out;
+}
+
+input[type='radio']#three:checked ~  .all:before{
+	left: 319px;
+}
+
+.menu{
+	width: 350px;
+	height: inherit;
+	margin: 0 auto ;
+}
+
+ul{
+	width: inherit;
+	height: inherit;
+	list-style: none;
+}
+
+.menu li{
+	width: inherit;
+	border-bottom : 1px solid rgb(235, 235, 235);
+}
+
+.menu li:nth-child(1){
+	margin-top: 67px;
+}
+
+.menu li:last-child{
+	border-bottom: 0;
+}
+
+.Link a{
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	color : #4B4E43;
+	font-size: 18px;
+	text-align: center;
+	text-shadow : 0 0 2px #4F5144;
+	opacity: .7;
+}
+
+.Link a:hover{
+	text-shadow : 0 0 0;
+	opacity: 1;
+}
+</style> 
+ </head> 
+ <body> 
+  <div class="container"> 
+   <div class="bg-image"> 
+    <h3>Alysson Inacio</h3> 
+   </div> 
+   <div class="followe"> 
+    <ul> 
+     <li><a href="#"> <span id="number">45</span> <span id="followe">Followers</span> </a></li> 
+     <li><a href="#"> <span id="number">5</span> <span id="followe">Following</span> </a></li> 
+     <div class="badboy"></div> 
+    </ul> 
+   </div> 
+   <div class="image"></div> 
+   <input type="radio" id="one" name="contorol" checked> 
+   <label for="one"><i class="icon-comments-alt"></i></label> 
+   <input type="radio" id="two" name="contorol"> 
+   <label for="two"><img src="https://gs.xat.com/a_(everypower)_20" alt="a_(everypower)_20?.png">Alysson<img src="https://gs.xat.com/a_(everypower)_20" alt="a_(everypower)_20?.png"></label> 
+   <input type="radio" id="three" name="contorol"> 
+   <label for="three"><i class="icon-link"></i></label> 
+   <div class="all"> 
+    <div class="chat"> 
+     <div class="show-message"> 
+      <div class="friend"> 
+       <img src="https://gs.xat.com/a_(bot)_30" alt="a_(bot)_40?.png">BotMensagens 
+       <div class="message"> 
+        <p>Hi. Am searching for something about Css. would you mind helping me to find out?<br> </p> 
+       </div> 
+      </div> 
+      <div class="me"> 
+       <img src="http://i.cubeupload.com/nD0XUv.png" width="32" height="32">Info 
+       <div class="message"> 
+        <p>Hi dear<br> of course if i can ...</p> 
+       </div> 
+      </div> 
+      <div class="badboy"></div> 
+     </div> 
+     <div class="type-text"> 
+      <input type="text" placeholder="Chat with Mostafa..."> 
+      <button type="submit"><i id="i" class="icon-comments-alt"></i></button> 
+     </div> 
+    </div> 
+    <div class="Description"> 
+     <p>My name is Mostafa Hasani.<br> I'm in love with Html,Css and anything about front-end web.<br> I like sports too...<br> because healthy mind is in healthy body. </p> 
+    </div> 
+    <div class="Link"> 
+     <div class="menu"> 
+      <ul> 
+       <li><a href="">🙂</a></li> 
+       <li><a href="">Bio</a></li> 
+       <li><a href="">@Alysson</a></li> 
+      </ul> 
+     </div> 
+    </div> 
+    <div class="badboy"></div> 
+   </div> 
+  </div> 
+ </body>
+</html>
